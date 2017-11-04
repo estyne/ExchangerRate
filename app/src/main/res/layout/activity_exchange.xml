@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/code1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="USD :"/>
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="3367674"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/code2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:text="NGN :"/>
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
